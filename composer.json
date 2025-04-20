@@ -1,6 +1,6 @@
 {
     "name": "avelinojavier/cakephp-search-form",
-    "description": "Plugin that shows a form that implement the friendsofcake/search plugin in a element component.",
+    "description": "Plugin that shows a search form in a element component.",
     "type": "cakephp-plugin",
     "license": "MIT",
     "require": {
