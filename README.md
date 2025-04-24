@@ -1,5 +1,5 @@
 # SearchForm plugin for CakePHP
-Plugin that shows a search form in a element component.
+Plugin that shows a search form in an element component.
 
 ## Installation
 ```
