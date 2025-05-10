@@ -1,8 +1,13 @@
+<?php
+
+use SearchForm\Constant\Param;
+
+?>
 <?= $this->Html->css('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css', ['block' => true]) ?>
 <?= $this->Form->create(null, ['valueSources' => 'query']) ?>
 <div class="container">
     <div class="row">
-        <?= $this->Form->control('search', [
+        <?= $this->Form->control(Param::QUERY_PARAM_SEARCH, [
             'type' => 'search',
             'placeholder' => __d('search_form', 'Buscar'),
             'label' => false,
@@ -15,7 +20,7 @@
 <?= $this->Form->end() ?>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        const searchElement = document.getElementById("search");
+        const searchElement = document.getElementById("<?= Param::QUERY_PARAM_SEARCH ?>");
         if (searchElement)
             searchElement.addEventListener("search", function(event) {
                 if (!event.target.value)
